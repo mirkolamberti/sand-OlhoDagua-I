@@ -1,0 +1,143 @@
+[debug] [2018-02-15T01:32:03.124Z] ----------------------------------------------------------------------
+[debug] [2018-02-15T01:32:03.128Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-02-15T01:32:03.128Z] CLI Version:   3.17.4
+[debug] [2018-02-15T01:32:03.128Z] Platform:      darwin
+[debug] [2018-02-15T01:32:03.128Z] Node Version:  v6.13.0
+[debug] [2018-02-15T01:32:03.129Z] Time:          Wed Feb 14 2018 22:32:03 GMT-0300 (-03)
+[debug] [2018-02-15T01:32:03.129Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-15T01:32:03.143Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-02-15T01:32:03.144Z] > authorizing via signed-in user
+[debug] [2018-02-15T01:32:03.146Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-02-15T01:32:03.147Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/uLyPQpos6Yuu5d3B-onMhYESgaJb-is-n4NvilgygWw',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Feb 14 2018 22:32:03 GMT-0300 (-03)
+[debug] [2018-02-15T01:32:03.989Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-15T01:32:04.057Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fir-functions-a6344  
+  
+ Wed Feb 14 2018 22:32:04 GMT-0300 (-03)
+[debug] [2018-02-15T01:32:05.023Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-15T01:32:05.024Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fir-functions-a6344/tokens  
+  
+ Wed Feb 14 2018 22:32:05 GMT-0300 (-03)
+[debug] [2018-02-15T01:32:06.411Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'fir-functions-a6344'...
+[info] 
+[info] i  deploying functions
+[info] Running command: npm --prefix $RESOURCE_DIR run lint
+[info] ✔  functions: Finished running predeploy script.
+[debug] [2018-02-15T01:32:16.273Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "~5.8.1",
+    "firebase-functions": "^0.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "eslint-plugin-promise": "^3.6.0"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-02-15T01:32:16.275Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/fir-functions-a6344?view=CONSUMER_VIEW  
+  
+ Wed Feb 14 2018 22:32:16 GMT-0300 (-03)
+[debug] [2018-02-15T01:32:16.276Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/fir-functions-a6344?view=CONSUMER_VIEW  
+  
+ Wed Feb 14 2018 22:32:16 GMT-0300 (-03)
+[debug] [2018-02-15T01:32:16.468Z] Error: socket hang up
+    at TLSSocket.onHangUp (_tls_wrap.js:1124:19)
+    at TLSSocket.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at TLSSocket.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:128:9)
+[error] 
+[error] Error: Server Error. socket hang up
+[debug] [2018-02-15T01:33:18.944Z] ----------------------------------------------------------------------
+[debug] [2018-02-15T01:33:18.947Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-02-15T01:33:18.947Z] CLI Version:   3.17.4
+[debug] [2018-02-15T01:33:18.947Z] Platform:      darwin
+[debug] [2018-02-15T01:33:18.947Z] Node Version:  v6.13.0
+[debug] [2018-02-15T01:33:18.948Z] Time:          Wed Feb 14 2018 22:33:18 GMT-0300 (-03)
+[debug] [2018-02-15T01:33:18.948Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-15T01:33:18.992Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-02-15T01:33:18.992Z] > authorizing via signed-in user
+[debug] [2018-02-15T01:33:18.995Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fir-functions-a6344  
+  
+ Wed Feb 14 2018 22:33:18 GMT-0300 (-03)
+[debug] [2018-02-15T01:33:19.951Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-15T01:33:19.952Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fir-functions-a6344/tokens  
+  
+ Wed Feb 14 2018 22:33:19 GMT-0300 (-03)
+[debug] [2018-02-15T01:33:20.784Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'fir-functions-a6344'...
+[info] 
+[info] i  deploying functions
+[info] Running command: npm --prefix $RESOURCE_DIR run lint
+[info] ✔  functions: Finished running predeploy script.
+[debug] [2018-02-15T01:33:27.972Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "~5.8.1",
+    "firebase-functions": "^0.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "eslint-plugin-promise": "^3.6.0"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-02-15T01:33:27.973Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/fir-functions-a6344?view=CONSUMER_VIEW  
+  
+ Wed Feb 14 2018 22:33:27 GMT-0300 (-03)
+[debug] [2018-02-15T01:33:27.974Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/fir-functions-a6344?view=CONSUMER_VIEW  
+  
+ Wed Feb 14 2018 22:33:27 GMT-0300 (-03)
+[debug] [2018-02-15T01:33:29.200Z] <<< HTTP RESPONSE 200
+[warn] ⚠  functions: missing necessary APIs. Enabling now...
+[debug] [2018-02-15T01:33:29.202Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/fir-functions-a6344?updateMask=usageSettings  
+ { usageSettings: { consumerEnableStatus: 'ENABLED' } } 
+ Wed Feb 14 2018 22:33:29 GMT-0300 (-03)
+[debug] [2018-02-15T01:33:29.293Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-15T01:33:30.725Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-15T01:33:40.729Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/fir-functions-a6344?view=CONSUMER_VIEW  
+  
+ Wed Feb 14 2018 22:33:40 GMT-0300 (-03)
+[debug] [2018-02-15T01:33:40.774Z] Error: socket hang up
+    at TLSSocket.onHangUp (_tls_wrap.js:1124:19)
+    at TLSSocket.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at TLSSocket.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:128:9)
+[error] 
+[error] Error: Server Error. socket hang up
